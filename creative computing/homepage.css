@@ -1,0 +1,38 @@
+
+
+body {
+
+	background-color: #FFAA00;
+
+	font-family: "Arial","Helvetica",sans-serif}
+
+h1 {color: #FF0000;
+
+}
+
+h1 {
+	border: 3px dashed green;
+
+	color: purple;
+
+	background-color: pink}
+
+#header {color: yellow;
+		font-family: Sedgwick Ave Display
+
+}
+
+.phone-number {
+	font-weight: bold;
+}
+
+.international {
+	font-style: italic;
+}
+
+p{
+	line-height:40px;
+	letter-spacing: 13px;
+	font-family: Sedgwick Ave Display
+
+}
