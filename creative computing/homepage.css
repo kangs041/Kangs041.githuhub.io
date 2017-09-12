@@ -2,37 +2,41 @@
 
 body {
 
-	background-color: #FFAA00;
+	background-color: #c8bdf8;
 
-	font-family: "Arial","Helvetica",sans-serif}
+	font-family:"monotype corsiva",sans-serif}
 
-h1 {color: #FF0000;
+h1 {color: #f3cbf8;
+
 
 }
 
 h1 {
-	border: 3px dashed green;
+	border: 2.5px dotted white;
 
-	color: purple;
+	color: yellow;
 
 	background-color: pink}
 
-#header {color: yellow;
-		font-family: Sedgwick Ave Display
+#header {color: #141a2a;
+		font-family: "monotype corsiva"
 
 }
 
 .phone-number {
-	font-weight: bold;
+	font-weight: arial;
 }
 
-.international {
-	font-style: italic;
-}
 
 p{
-	line-height:40px;
+	line-height:30px;
 	letter-spacing: 13px;
-	font-family: Sedgwick Ave Display
+	font-family: arial
 
 }
+
+li{ font-family: arial
+
+ }
+
+ a{font-family: arial}
