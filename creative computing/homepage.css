@@ -16,7 +16,9 @@ h1 {
 
 	color: yellow;
 
-	background-color: pink}
+	background-color: pink
+	
+	border-bottom-color: green;}
 
 #header {color: #141a2a;
 		font-family: "monotype corsiva"
