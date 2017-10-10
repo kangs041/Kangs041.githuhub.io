@@ -42,7 +42,7 @@ for (var i = 0; i < 10; i = i + 1) {
         console.log("Row " + i + ", Column " + j);
 
         // The next line is the only JS you'll have to change.
-        if (i-j) {
+        if (j-i) {
             console.log("   pink");
             document.write("<div class='box pink'></div>");
         } else {
@@ -80,7 +80,7 @@ for (var i = 0; i < 10; i = i + 1) {
         console.log("Row " + i + ", Column " + j);
 
         // The next line is the only JS you'll have to change.
-        if (i %-2) {
+        if (i % -2) {
             console.log("   pink");
             document.write("<div class='box pink'></div>");
         } else {
