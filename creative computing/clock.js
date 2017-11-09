@@ -1,19 +1,34 @@
-function updateTime() {
-	var clockHolder = document.getElementById("clock")
+
+
+
+
+
+
+
+
+/*
+
+function update() {
+	var hour=document.getElementById("bounce")
+	var minute=document.getElementById("bounce2")
+	console.log (bounce)
+	console.log (bounce2)
 
 	var now = new Date()
-	var seconds = now.getSeconds()
-	now = now.toTimeString()
 
-	if (seconds < 20) {
-		clockHolder.style.color = "red"
-	} else if (seconds < 40) {
-		clockHolder.style.color = "green"
-	} else {
-		clockHolder.style.color = "blue"
-	}
+	var height=400-(now.getMinutes()+5)+"px"
+	console.log(height)
+	bounce.style.animationDelay = 시간써야함
+	bounce2.style.animationDelay = -delay time
+}
+
+setInterval(update, 1000)
+	var hour = date.getHours()
+	var minute = now.getMinutes()
+	now = now.toTimeString() 
 
 	clockHolder.innerHTML = now
 }
 
-setInterval(updateTime, 1000)
+
+setInterval(updateTime, 1000)*/

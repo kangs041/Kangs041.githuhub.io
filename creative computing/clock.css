@@ -16,7 +16,6 @@ body {background-color:#566270 ;
 
  }
 
-
 @keyframes bounce {
   0% { transform: translate(0,-50%) scale(1,0.8); }
   30% { transform: translate(0,-250%) scale(0.8,1); }
