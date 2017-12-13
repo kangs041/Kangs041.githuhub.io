@@ -37,6 +37,8 @@ function handleKeyPress(evt) {
 document.getElementById("black-right").style.backgroundColor = "green"
 } else {
 document.getElementById("black-right").style.backgroundColor = "black"
+
+
 if (document.getElementById("black-left",).style.backgroundColor =="black") {
 
 document.getElementById("black-left").style.backgroundColor = "green"
