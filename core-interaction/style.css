@@ -1,0 +1,32 @@
+body{
+  background-color: lightcoral;
+}
+
+h1{
+  background-color: red;
+  text-align: center;
+  border:20px dotted white;
+}
+
+img {width:300px;
+}
+
+a{
+  font-size:80px;
+  color: yellow;
+}
+
+#good{
+  background-color: lightyellow;
+}
+
+#evil{
+  background-color:lightgreen;
+}
+
+.na{
+  font-family: fantasy;
+}
+.sa{
+  font-family: Helvetica;
+}

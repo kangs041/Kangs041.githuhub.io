@@ -1,0 +1,38 @@
+
+p{
+  font-family:serif;
+  color: black;
+  font-size: 50px;
+  text-align:center;
+  font-weight: bolder;
+  top: 100px;
+}
+  body {background-color:#000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #53346D, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #53346D, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-bottom: 5px;
+
+}
+#circle {
+  background-color: grey;
+  	left: 40px;
+  	width: 70px;
+  	height: 70px;
+  	border-radius: 50px;
+  	top: 60px;
+  	position: absolute;
+  }
+  #line {
+    text-decoration-line: line-through;
+    margin-bottom: 2px;
+    top: 20px;
+  }
+  #fix{
+    width: 1000px;
+    height: 600px;
+    margin-left: 150px;
+  }
+
+}
+#bottom{
+  align-items: center;

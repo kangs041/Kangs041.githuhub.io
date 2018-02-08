@@ -1,0 +1,39 @@
+#information{
+  font: black;
+}
+
+body{
+  background-color: lightgrey;
+}
+img{
+  width: 60%;
+  padding: 5%;
+  margin-left: 15%;
+
+}
+h1{
+  font-size: 50px;
+  text-align: center;
+  font-weight: lighter;
+  font-family: cursive;
+}
+p{
+  color: white;
+  font-weight: lighter;
+  font-family: monospace;
+  font-size: 20px;
+}
+ol{
+  color: black;
+  font-family: monospace;
+  font-weight: lighter;
+  margin: 20px;
+  border: 5px dotted  black;
+}
+ul{
+  color: black;
+  font-family: monospace;
+  font-weight: lighter;
+  margin: 20px;
+  border: 5px dotted  black;
+}

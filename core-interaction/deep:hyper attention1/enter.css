@@ -1,0 +1,9 @@
+body {
+  font-family:travelingTypewriter;
+  background-color:#DCDCDC;
+  font-weight: lighter;
+  color: white;
+}
+li{
+  margin-bottom: 20px;
+}
