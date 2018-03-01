@@ -1,0 +1,85 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FF6A5C;
+}
+.navigation {
+  width: 150px;
+}
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0px;
+  margin:0px;
+
+}
+
+.mainmenu a {
+  display: block;
+  background-color: #056571;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
+.mainmenu a:hover {
+    background-color: #0F1626;
+}
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+.submenu a {
+  background-color: #CCDFCB;
+}
+.submenu a:hover {
+  background-color: #0F1626;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 5;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.animation-container span {
+  color: white;
+  display: white;
+  font-size: 10px;
+  text-shadow: 0 0 1px white;
+  position: absolute;
+  cursor: default;
+  z-index: 1;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation-timing-function: ease-out;
+  animation-name: move;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}

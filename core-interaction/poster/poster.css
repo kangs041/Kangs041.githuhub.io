@@ -1,0 +1,57 @@
+body {
+  background: repeating-linear-gradient(#FF0000, #FF0000 20px, #ffffff 25px, #ffffff 30px);
+}
+
+.Big {
+  color: yellow;
+  border: 10px solid white;
+  background-color: #F8D736;
+  font-size: 30px;
+  color: black;
+  font-family:serif;
+  font-variant: small-caps;
+  height: 350px;
+  width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.Big p{
+  color: black;
+  border-width: 30px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.Small h1 {
+  color: black;
+  border: 10px solid white;
+  height: 100px;
+  width: 200px;
+  font-weight: bolder;
+  font-family: serif;
+  font-variant: small-caps;
+  padding-top: 30px;
+  text-align: center;
+  background: white;
+}
+
+.Small p {
+  color: black;
+  font-size: 30px;
+  padding-left: 300px;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.fixed {
+  left: 600px;
+  color: yellow;
+  background-color: white;
+  width: 50px;
+  position:fixed;
+  top: 40%;
+  padding-right: 400px;
+}
