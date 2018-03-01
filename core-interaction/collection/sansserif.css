@@ -34,7 +34,7 @@ body {
   margin-left: 200px;
   font-size: 30px;
 }
-.Cuprum:hover:after{
+.cuprum:hover:after{
   visibility: visible;
   position: absolute;
   content: "Cuprum";
