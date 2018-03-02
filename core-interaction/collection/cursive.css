@@ -6,6 +6,13 @@ body {
   color: white;
 }
 
+input[type="text"] {
+  font-family: Abril Fatface;
+  font-size: 20px;
+  opacity: .5;
+}
+
+
 .shrikhand {
   font-family:Shrikhand;
   margin-left: 200px;
