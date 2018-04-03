@@ -18,6 +18,7 @@ document.getElementById("word3").addEventListener("click", function(){
     document.getElementById("back").style.backgroundColor = "black"
     document.getElementById("back").style.transition = "0.5s"
     document.getElementById("word3").style.backgroundColor = "grey"
+    document.getElementById("night").style.visibility= "visible"
 });
 
 
@@ -33,6 +34,7 @@ document.getElementById("word5").addEventListener("click", function(){
     document.getElementById("back").style.backgroundColor = "blue"
     document.getElementById("back").style.transition = "0.5s"
     document.getElementById("word5").style.backgroundColor = "grey"
+    document.getElementById("he").style.visibility= "visible"
 });
 
 
@@ -48,13 +50,32 @@ document.getElementById("word7").addEventListener("click", function(){
 });
 
 
+
+
+
+
+
+
+
 document.getElementById("word8").addEventListener("click", function(){
       document.getElementById("word8").style.backgroundColor = "grey"
+      document.getElementById("am").style.visibility= "visible"
 });
+
+function updateTime() {
+	var clockHolder = document.getElementById("am")
+	var now= new Date()
+	var seconds =now.getSeconds()
+	now =now.toTimeString()
+		clockHolder.style.color="pink"
+	clockHolder.innerHTML = now
+}
+setInterval(updateTime,1000)
 
 
 document.getElementById("word9").addEventListener("click", function(){
       document.getElementById("word9").style.backgroundColor = "grey"
+      document.getElementById("everyday").style.visibility="visible"
 });
 
 
@@ -70,4 +91,5 @@ document.getElementById("word11").addEventListener("click", function(){
 
 document.getElementById("word12").addEventListener("click", function(){
       document.getElementById("word12").style.backgroundColor = "grey"
+
 });

@@ -9,18 +9,38 @@
   visibility: hidden;
   animation: letterspacing 8s;
   filter: blur(1.5rem);
-  letter-spacing: 1rem;
+  keyframes: letter-spacing 1rem;
 }
-
-@keyframes move {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+#everyday{
+  height: 700px;
+  width: 300px;
+  top: 10%;
+  left: 10%;
+  visibility: hidden;
+}
+#night {
+font-family: 'Tangerine', cursive;
+  position: absolute;
+  font-size: 200px;
+  color: yellow;
+  top: 40%;
+  left: 70%;
+  margin-left: -600px;
+  margin-top: -300px;
+  visibility: hidden;
+  animation: neon1 1000s;
+}
+#am {
+font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  font-size: 30px;
+  color: blue;
+  top: 90%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  visibility: hidden;
+  -moz-keyframes: move 10s;
 }
 
 @keyframes letterspacing {
@@ -36,10 +56,17 @@
     filter: blur(1.5rem);
   }
 }
-
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
 #back {
   background-blend-mode: multiply;
-  opacity: .2;
+  opacity: .8;
   overflow: hidden;
 }
 
@@ -54,7 +81,7 @@
   margin-left: -250px;
   margin-top: -100px;
   box-shadow: 20px 10px #e1e8f0;
-  opacity: 0;
+
 }
 #video {
   position: fixed;
