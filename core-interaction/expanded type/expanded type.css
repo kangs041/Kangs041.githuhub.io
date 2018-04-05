@@ -1,46 +1,83 @@
+#bgm {
+  visibility: hidden;
+}
+
+#reset{
+font-family: 'Tangerine', cursive;
+font-size: 50px;
+width: 55px;
+height: 55px;
+border-radius: 50%;
+background: white;
+position: fixed;
+bottom: 30px;
+right: 30px;
+cursor: pointer;
+box-shadow: 0px 4px 10px #666;
+text-overflow: clip;
+}
+#reset:hover {
+background: #e1e8f0;
+}
+#reset:active {
+  background-color: #666666;
+  box-shadow:0px 2px 5px black;
+}
+#night {
+font-family: 'Tangerine', cursive;
+  position: absolute;
+  font-size: 200px;
+  color: white;
+  top: 50%;
+  left: 80%;
+  margin-left: -600px;
+  margin-top: -300px;
+  visibility: hidden;
+  animation: neon1 1000s;
+}
+
 #love{
   position: absolute;
-  font-size: 400px;
-  color: red;
+  font-size: 300px;
+  color: white;
   top: 50%;
   left: 50%;
   margin-left: -600px;
   margin-top: -300px;
   visibility: hidden;
   animation: letterspacing 8s;
-  filter: blur(1.5rem);
-  keyframes: letter-spacing 1rem;
+  filter: blur(.5rem);
 }
 #everyday{
-  height: 700px;
-  width: 300px;
-  top: 10%;
-  left: 10%;
+  height:1000px;
+  width: 1600px;
+  top: 10px;
+  left: 10px;
   visibility: hidden;
-}
-#night {
-font-family: 'Tangerine', cursive;
   position: absolute;
-  font-size: 200px;
-  color: yellow;
-  top: 40%;
-  left: 70%;
-  margin-left: -600px;
-  margin-top: -300px;
-  visibility: hidden;
-  animation: neon1 1000s;
+  opacity:.4;
+  filter: blur(50);
 }
+#between {
+  height:200px;
+  width: 300px;
+  top: 10px;
+  left: 10px;
+  visibility: hidden;
+  position: absolute;
+  opacity:1;
+}
+
 #am {
 font-family: 'Press Start 2P', cursive;
   position: absolute;
-  font-size: 30px;
-  color: blue;
+  font-size: 20px;
+  color: black;
   top: 90%;
   left: 50%;
   margin-left: -100px;
   margin-top: -100px;
   visibility: hidden;
-  -moz-keyframes: move 10s;
 }
 
 @keyframes letterspacing {
@@ -53,7 +90,7 @@ font-family: 'Press Start 2P', cursive;
   }
   100% {
     letter-spacing: 1rem;
-    filter: blur(1.5rem);
+    filter: blur(.5rem);
   }
 }
 @-webkit-keyframes neon1 {
@@ -64,9 +101,11 @@ font-family: 'Press Start 2P', cursive;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
   }
 }
+
+
 #back {
   background-blend-mode: multiply;
-  opacity: .8;
+  opacity: .9;
   overflow: hidden;
 }
 
@@ -81,9 +120,13 @@ font-family: 'Press Start 2P', cursive;
   margin-left: -250px;
   margin-top: -100px;
   box-shadow: 20px 10px #e1e8f0;
-
+  opacity: 1;
 }
-#video {
+#box:active {
+  box-shadow: 10px 5px #e1e8f0;
+}
+#video1{
+  controls: loop;
   position: fixed;
   bottom: 0px;
   right: 0px;
@@ -93,6 +136,85 @@ font-family: 'Press Start 2P', cursive;
   height: auto;
   z-index: -1000;
   visibility: hidden;
+  opacity: .9;
+}
+#video2{
+  controls: loop;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  visibility: hidden;
+    opacity: .6;
+}
+#video3{
+  controls: loop;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  visibility: hidden;
+    opacity: .5;
+}
+#video4{
+  controls: loop;
+  position: fixed;
+  bottom: 120px;
+  right: 180px;
+  min-width: 100%;
+  min-height: 100%;
+  width: 50%;
+  height: 50%;
+  z-index: -1000;
+  visibility: hidden;
+    opacity: .6;
+}
+#video5{
+  controls: loop;
+  position: fixed;
+  bottom: 0px;
+  right: -200px;
+  min-width: 100%;
+  min-height: 100%;
+  width: 70%;
+  height: 50%;
+  z-index: -1000;
+  visibility: hidden;
+    opacity: .7;
+}
+#video6{
+  controls: loop;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  visibility: hidden;
+    opacity: .5;
+}
+#video7{
+  controls: loop;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  visibility: hidden;
+    opacity: .5;
 }
 .smallbox {
   font-size: 30px;
@@ -107,7 +229,7 @@ background-color: grey;
 }
 
 #word1 {
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'Inconsolata', monospace;
   padding-left: 5px;
   padding-right: 5px;
@@ -131,7 +253,7 @@ font-family: 'Inconsolata', monospace;
     font-weight: bold;
 }
 #word2 {
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -155,7 +277,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word3 {
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -179,7 +301,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word4 {
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -203,7 +325,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word5 {
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -228,7 +350,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word6{
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -252,7 +374,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word7{
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -276,7 +398,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word8{
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -300,7 +422,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word9{
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -324,7 +446,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word10{
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -348,7 +470,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word11{
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
@@ -372,7 +494,7 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #word12{
-  font-size: 30px;
+  font-size: 20px;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
   padding-left: 5px;
   padding-right: 5px;
