@@ -274,4 +274,5 @@ document.getElementById("word10").addEventListener("click", function(){
             document.getElementById("night").style.visibility= "hidden"
             document.getElementById("am").style.visibility= "hidden"
             document.getElementById("everyday").style.visibility= "hidden"
+                document.getElementById("bgm").paused();
     });
