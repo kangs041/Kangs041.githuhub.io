@@ -1,0 +1,25 @@
+h1{
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+	body{
+		background-image: url(blueplace.jpeg);
+	}
+  h1{
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 600px) {
+	body{
+		background-image: url(redplace.jpeg);
+	}h1{
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 900px) {
+	body{
+		background-image: url(yellowplace.jpeg);
+	}h1{
+    font-size: 100px;
+  }
+}
