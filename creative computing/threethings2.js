@@ -7,10 +7,10 @@ function handleDocumentClick(evt){
 
         document.getElementById("face").style.backgroundColor="#93642b"
         document.getElementById("ear-left").style.backgroundColor="#93642b"
-        document.getElementById("ear-right").style.backgroundColor="#93642b" 
+        document.getElementById("ear-right").style.backgroundColor="#93642b"
         document.getElementById("eye-left").style.width="50px"
         document.getElementById("eye-right").style.width="50px"
-} 
+}
 
 
 document.addEventListener("mousemove",handleMouseMove)
@@ -31,7 +31,7 @@ document.addEventListener("keypress",handleKeyPress)
 function handleKeyPress(evt) {
 		document.getElementById("nose").style.backgroundColor="red"
 
-		
+
 		if (document.getElementById("black-right",).style.backgroundColor =="black") {
 
 document.getElementById("black-right").style.backgroundColor = "green"
@@ -46,9 +46,3 @@ document.getElementById("black-left").style.backgroundColor = "green"
 document.getElementById("black-left").style.backgroundColor = "black"
 }
 }	}
-
-
-
-
-
-

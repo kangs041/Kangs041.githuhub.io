@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sound track</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="map.css">
+<iframe src="https://maps.wrld3d.com/embed/?mapscene=d462b68" width="560" height="300" frameborder="0" style="border:0" id="map3d" allowfullscreen></iframe>
+    <p>Welcome to Washington square park</p>
+    <div id="map2">Map</div>
+    <div id="Music">Music</div>
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       html {
+         width: auto;
+         height: auto;
+       }
+      #map {
+        visibility: hidden;
+        height: 10px;
+        width: 10px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+
+    </style>
+
+  </head>
+  <video id="M1" paused loop>
+    <source src="1.mp3" type="video/mp4"></video>
+  <video id="M2" autoplay loop>
+    <source src="2.mp3" type="video/mp4"></video>
+
+
+  <body>
+    <div id="map"></div>
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+
+      var infoWindow;
+      var map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+
+        infoWindow = new google.maps.InfoWindow({map: map});
+
+        // Try HTML5 geolocation.
+        //onSucess
+
+        if (navigator.geolocation) {
+
+          navigator.geolocation.getCurrentPosition(onSuccess, onFailure);
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+
+        }
+      }
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+
+      var map2Clicked = false;
+
+      document.getElementById("map2").addEventListener("click", function(){
+        if (map2Clicked ==false){
+          map2Clicked = true;
+
+          document.getElementById("map3d").style.visibility="hidden"
+        }
+          else
+          {map2Clicked = false;
+            document.getElementById("map3d").style.visibility="visible"
+          }
+      });
+
+      function onSuccess(position) {
+        console.log("location allowed")
+        var pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        infoWindow.setPosition(pos);
+        infoWindow.setContent('Location found.');
+        map.setCenter(pos);
+
+        if (position.coords.longitude> -73.993852
+          && position.coords.latitude>40.735149){
+            console.log("red")
+            document.body.style.backgroundColor ="red"
+        } else {
+          console.log("blue")
+            document.body.style.backgroundColor ="blue"
+            document.getElementById("M2").vid.autoplay= "true"
+        }
+      }
+
+      function onFailure(error) {
+        console.error(error)
+        handleLocationError(true, infoWindow, map.getCenter());
+        document.body.style.backgroundColor ="black";
+
+
+      }
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwntOIWL_dC4IzWagkC_jB3rUfdzxE9-w&callback=initMap">
+    </script>
+
+  </body>
+</html>
