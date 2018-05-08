@@ -10,14 +10,9 @@
     <p>Welcome to Washington square park</p>
 
     <div id="map2">Map</div>
+  <div id="whereyouare"><a href="Location.html">Check Location</div>
+  <div id="sound"><a href="music.html">Sound</div>
 
-
-    <div id="content">
-  <input type="file" id="thefile" accept="audio/x-pn/realaudio"
-   />
-  <canvas id="canvas"></canvas>
-  <audio id="audio" controls></audio>
-</div>
 
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -26,14 +21,6 @@
          width: auto;
          height: auto;
        }
-       #canvas {
-         position: fixed;
-         left: 0;
-         top: 50%;
-         width: 100%;
-         height: 50%;
-         opacity: .5;
-       }
 
       #map {
         visibility: hidden;
@@ -41,37 +28,12 @@
         width: 10px;
       }
 
-  #thefile {
-  position: fixed;
-  top: 50%;
-  left: 10px;
-  z-index: 100;
-}
-
-
       /* Optional: Makes the sample page fill the window. */
-
     </style>
-
   </head>
-
 
   <body>
     <div id="map"></div>
-    <ul id="playlist">
-            <li class="active">
-                <a href="s1.mp3">
-                    Ravel Bolero
-                </a>
-            </li>
-            <li>
-                <a href="s2.mp3">
-                    Moonlight Sonata - Beethoven
-                </a>
-            </li>
-        </ul>
-
-
 
     <script>
       // Note: This example requires that you consent to location sharing when
@@ -135,108 +97,68 @@
         infoWindow.setContent('Location found.');
         map.setCenter(pos);
 
-        if (position.coords.longitude> -73.993852
-          && position.coords.latitude>40.735149){
+        if (position.coords.longitude< -73.998611
+          && position.coords.longitude> -73.997051
+          && position.coords.latitude>40.731363
+          && position.coords.latitude<40.732122){
             console.log("red")
-            document.body.style.backgroundColor ="white"
+            document.body.style.backgroundColor ="red"
         }
+        if (position.coords.longitude< -73.997051
+          && position.coords.longitude> -73.995703
+          && position.coords.latitude<40.731363
+          && position.coords.latitude>40.730727){
+            console.log("orange")
+            document.body.style.backgroundColor ="orange"
+        }
+        if (position.coords.longitude< -73.996138
+          && position.coords.longitude> -73.995703
+          && position.coords.latitude>40.730181
+          && position.coords.latitude<40.730727){
+            console.log("yellow")
+            document.body.style.backgroundColor ="yellow"
+        }
+            if (position.coords.longitude> -73.996138
+              && position.coords.longitude< -73.996636
+              && position.coords.latitude<40.730181
+              && position.coords.latitude>40.729639){
+                console.log("green")
+                document.body.style.backgroundColor ="green"
+        }
+        if (position.coords.longitude< -73.998073
+          && position.coords.longitude> -73.996636
+          && position.coords.latitude<40.730346
+          && position.coords.latitude>40.729639){
+            console.log("blue")
+            document.body.style.backgroundColor ="blue"
+    }
+    if (position.coords.longitude> -73.998073
+      && position.coords.longitude< -73.999558
+      && position.coords.latitude>40.730346
+      && position.coords.latitude<40.731079){
+        console.log("purple")
+        document.body.style.backgroundColor ="purple"
+}
+
+if (position.coords.longitude> -73.998611
+  && position.coords.longitude< -73.999558
+  && position.coords.latitude<40.732122
+  && position.coords.latitude>40.731079){
+    console.log("brown")
+    document.body.style.backgroundColor ="brown"
+}
 
         else {
           console.log("blue")
-            document.body.style.backgroundColor ="brown"
+            document.body.style.backgroundColor ="pink"
         }
       }
+
       function onFailure(error) {
         console.error(error)
         handleLocationError(true, infoWindow, map.getCenter());
         document.body.style.backgroundColor ="black";
       }
-
-
-
-////쓸모없는거/////s1이노래버튼이라는가정하에////
-      var s1Clicked = false;
-
-      document.getElementById("s1").addEventListener("click", function(){
-        if (word1Clicked ==false){
-          word1Clicked = true;
-          document.getElementById("s1").style.backgroundColor = "red"
-          document.getElementById("s1").play(s1) =""
-        }
-        else
-        {word1Clicked = false;
-          document.getElementById("s1").style.backgroundColor = "white"
-
-        }
-      });
-
-      ///오디오 비쥬얼///
-
-      window.onload = function() {
-
-        var file = document.getElementById("thefile");
-        var audio = document.getElementById("audio");
-
-        file.onchange = function() {
-          var files = this.files;
-          audio.src = URL.createObjectURL(files[0]);
-          audio.load();
-          audio.play();
-          var context = new AudioContext();
-          var src = context.createMediaElementSource(audio);
-          var analyser = context.createAnalyser();
-
-          var canvas = document.getElementById("canvas");
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
-          var ctx = canvas.getContext("2d");
-
-          src.connect(analyser);
-          analyser.connect(context.destination);
-
-          analyser.fftSize = 256;
-
-          var bufferLength = analyser.frequencyBinCount;
-          console.log(bufferLength);
-
-          var dataArray = new Uint8Array(bufferLength);
-
-          var WIDTH = canvas.width;
-          var HEIGHT = canvas.height;
-
-          var barWidth = (WIDTH / bufferLength) * 2.5;
-          var barHeight;
-          var x = 0;
-
-          function renderFrame() {
-            requestAnimationFrame(renderFrame);
-
-            x = 0;
-
-            analyser.getByteFrequencyData(dataArray);
-
-            ctx.fillStyle = "#000";
-            ctx.fi
-            llRect(0, 0, WIDTH, HEIGHT);
-
-            for (var i = 0; i < bufferLength; i++) {
-              barHeight = dataArray[i];
-
-              var r = barHeight + (25 * (i/bufferLength));
-              var g = 250 * (i/bufferLength);
-              var b = 50;
-
-              ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-              ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
-
-              x += barWidth + 1;
-            }
-          }
-
-          audio.play();
-          renderFrame();
-        };
-      };
 
     </script>
     <script async defer
