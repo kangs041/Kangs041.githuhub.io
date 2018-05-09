@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="map.css">
 <iframe src="https://maps.wrld3d.com/embed/?mapscene=d462b68" width="375"
  height="667" frameborder="0" style="border:0" id="map3d" allowfullscreen></iframe>
-    <p>Welcome to Washington square park</p>
-
+ <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+     <source type="audio/mp3" src="http://www.archive.org/download/bolero_69/Bolero.mp3">
+     Sorry, your browser does not support HTML5 audio.
+ </audio>
+    <h1>Welcome to Washington square park</h1>
+    <h2>Walk around and see how background color changes</h2>
     <div id="map2">Map</div>
-  <div id="whereyouare"><a href="location.html">Check Location</div>
-  <div id="sound"><a href="music.html">Sound</div>
-
-
+    <div id="whereyouare"><a href="location.html">Check Location</div>
+      <ul id="playlist">
+          <li id="red"><a href="https://cf-media.sndcdn.com/Gg0eCnhC18ZH.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vR2cwZUNuaEMxOFpILjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MjU5MDIyNTR9fX1dfQ__&Signature=AH6Zva8xvVUUd-pUvjHX9t6q0O0WqnVxPQapD8D2aWO7Usr4Ly5G8bCTk8IZL87K5Biu~5RlHmSHuy-bj4ixvuQ4nZ~fSXSJFW-sE9MbuA4mnumQVJ3bmhkYK3QVXV1fXnjs4dzSl-Aq6fvjgrcP4q9TpN~i8EcvDHQ3V9w84a7OPB6Penvg2DOEebn4Vr~LiyKYF~zjCbO~gpJY-kzEKXIbZ3wUByAO6CNzs7FbwlwKpGbMrlohVR-F2UMrz0NduMKe6yLuNRBf0v4TILiMQ6Is~e3~UxOXnLF35ZDjWPZ7GCmOZPj8ys4dabdqLxgBt9TVPxn-P2KrPZTS4p87oQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ">Red</a></li>
+          <li id="orange"><a href="https://cf-media.sndcdn.com/ACOSFNyJrQVb.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vQUNPU0ZOeUpyUVZiLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MjU5MDIzOTN9fX1dfQ__&Signature=Rufj8lowxIbr-n6uho2pMgAWPOY-lT7L0qhxQhyd~xCCL9d0Mo3IZXOcCk-wH0zqSXuYnSM7yNGIzbVAn0aU~eHIlOQSuD9YPLJNgb2EU9BrZuKIA4CWB17qjmbfuRb9a1G8Xajs5kwVMT6-8MsrlZQ8jqAhJlQg~dNSNI7KvurMDAdfcbTeydfWbvNVm0ILO5uLNfbMw8kZ4z618YjmbWmmWPKuy7NY7JpiJIdf7xLR9cJs45ylAMm1pRr09WOXm9n--ZX8SB8IZSQum2zHKdi5-qvtzYnLOTj8qqee962Zz7rGBAF5JOn7R4joKCiK2Jw-fIZQyxWM~ksZlOoihA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ">Orange</a></li>
+          <li id="yellow"><a href="https://cf-media.sndcdn.com/bLMNWDt835aw.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vYkxNTldEdDgzNWF3LjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MjU5MDI0ODh9fX1dfQ__&Signature=beJXORyUyVK64X89C6mxGaVvncUQFD~oGUnmnko76b0xlD32Uw-dxEZvsWRXfZtBFfdzby8bojtQKlOjb1lB7UQuDesFgvKN6im2aDuL761M3k-oYTjo95ptnXcnMKuat9sUqL2xn32g-z~1lXx-IBWLj5UStsmLYEKz295zTFuxTjWcYPb2n4awGI9aUwq1ytDi-S-CgzSKXHVbMSPsimNOyGkCBBIolMNqiZIE1q31e3UUPDWrMufvcwx0odCFx6YBt-ih1fNGwMszADjTrPV8p-rKUN9L-f9w3nuFZpXulGz9oLLDeNWoxT3ENtpGOkOvmWY5aY1fUqg1vf86sA__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ">Yellow</a></li>
+          <li id="green"><a href="https://cf-media.sndcdn.com/yt5MlvEUIRhJ.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20veXQ1TWx2RVVJUmhKLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MjU5MDI0MTl9fX1dfQ__&Signature=Vq76OoxybZNUb3Ghyncl3KHuuSZm-aREkUzo9-TlCkAwMxWFnAVLW8E1czjdonDnaKWH~hYaYWv443Rxq7kCAnRPtGNFHcGrcoOV8bCQ1fDdHtTKjcUROioCn3XPMoJdN4bBZocXj9jQ98kKkK5XKDb-7OlDbgqdtzJKmv-lYs1mQVT7AakY6FMtO~~pxKbdH3sZ0POgucxoNJfEfGvXTuftjQa3rOtNsH5khNfx3sMrdgu7M1Em4S0xHt~HqbMX-UgRVZ1bByuzmvMJyJU4ggJkyjcqSfmIy1jYplnhR3WxujGb5gStF5G7dicXi52Inw9WxrVah7xlxcgPizyTog__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ">Green</a></li>
+          <li id="blue"><a href="https://cf-media.sndcdn.com/nmKdgEznXHuX.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vbm1LZGdFem5YSHVYLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MjU5MDI2ODJ9fX1dfQ__&Signature=y3bIW8DYVtTF9gAYll1h9dMquS6K2ggHXH5jlWkEQHndF8pP~Mu3Nh8cN7yZqsEZLYnhImaS5hgIlOzIri-S2lJwYkETtmTr4wiVvvYrHQSVIHSEXuhr~p5gjFoiqtspa-0OOEy6KTX5-UmJqzIREY1MSe-aKY60SxPQlzR6zG75P54nlJMzkSK~FhOqB6YhGoKWxjFtFcbScM8Vwh~foTiEwZ0V1l2UNlvlMCi~I7EmXfcCYwr3lPaywDc6GyD0MrfIpwYa2gzadZpmUk-AQEBrsFdAcK0OENRt8AcfClfI~i7mflgixtOLzih4XCSUuD67TcWGK3cdOQ5HJrrfkQ__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ">Blue</a></li>
+          <li id="purple"><a href="https://cf-media.sndcdn.com/DSVkv8iVis1B.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vRFNWa3Y4aVZpczFCLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MjU5MDI3NTh9fX1dfQ__&Signature=R2WCI7xkZUY6Z-DUxD-8xOOWvMMofjQr2C1sUL9pN6PhA~vlHlFrk1o7sYyNHgnmLoIx5zeT6iWD-~BSsydC8DO9JYhSj2F92ZPQSbO9bDOFpAW2vo-B1zZlRIWSbsyymRW~UqGAlxqjG9~QbYxku3j-f5sLE12c0lbbrnXNHZghfv0GoTJ-Bs4ZlhvsZFcgwAa6mgWWGsIqE1pzTIRLzMTM3v4SsKg1sFaTL1pnqwT11VqjJP66x129BStpRVLV~xUG9ZZiEl59PmrFC~LS0KEOZZQMExu-DOAsfjzn0xKxJDsu60lItb5-iHjUkLZZkRRPamwXXb3G1TIzUugcHw__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ">Purple</a></li>
+          <li id="brown"><a href="https://cf-media.sndcdn.com/sDDGvrmDg2ZN.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vc0RER3ZybURnMlpOLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MjU5MDI3MjZ9fX1dfQ__&Signature=WakMU0ONQ2jZlbHl6L~-WUQ1zPpW4FSB6JBHAFXuABgNNznRK1KIfLT49c7Gv-~j3mzKYnCgBhiTKvonR-NUx9WcfWv78fDj8RJrB1qxyFchiytH6KCK-r43MRr9dn68QrqdLuG7TicUyEZfbffLEwMeKayqjRahKsOIYDz4pf46TiPlzXoT2Ron4XWJimtGGZyVNnmCUM8r~2j1ow3tcmBmR0OlOOjzu0sQpGzJZzxK5EqEIdhptBREy2wMDetWEkNCvW~nS3DFHrplUuFsZsNshlYdsarFWIA128WQEH3QqVEsaGv~REUhJwLFwjg8LZKrQiGWpwjlUltjcMs7ow__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ">Brown</a></li>
+          <li id="pink"><a href="https://cf-media.sndcdn.com/9qmkl6FIUMmi.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vOXFta2w2RklVTW1pLjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE1MjU5MDI3OTN9fX1dfQ__&Signature=EV9aNRsBilKmyW8Q7Z1ED2T~I8vGEk4jbL~G5xrDtPl-5XCK2XhaSDVdjfEon0WmGJLuj8bpC01e2ZIb6nZFvVPHVxnDk4PGjsZPke7MdhE-Ws738FO1PsFa8bZmFknjAaSAcv7iRfQGDKV3b1yals~Tnp1hdFdVAoeWB8G4snzAKRXTGF6htRNwG8avcKTjJbzr8JMA~dezvDzbYWAsu9iDbpiaEasqzvQngMW~vUAN3esIDuqOrNL-8FZj94N9-QRLBFd064uO0Y4uGEH6jzP81C5OQRXFchkgYNDxj5imXA~QtA-nIdhTocvf~t19dW8LwaGeU7fdifxJsNlBOg__&Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ">Pink</a></li>
+      </ul>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -30,10 +41,10 @@
 
       /* Optional: Makes the sample page fill the window. */
     </style>
+    <div id="map"></div>
   </head>
 
   <body>
-    <div id="map"></div>
 
     <script>
       // Note: This example requires that you consent to location sharing when
@@ -79,10 +90,14 @@
           map2Clicked = true;
 
           document.getElementById("map3d").style.visibility="hidden"
+          document.getElementById("audio").style.visibility="visible"
+          document.getElementById("playlist").style.visibility="visible"
         }
           else
           {map2Clicked = false;
             document.getElementById("map3d").style.visibility="visible"
+            document.getElementById("audio").style.visibility="hidden"
+            document.getElementById("playlist").style.visibility="hidden"
           }
       });
 
@@ -103,6 +118,7 @@
           && position.coords.latitude<40.732122){
             console.log("red")
             document.body.style.backgroundColor ="red"
+            document.getElementById("red").style.visibility="visible"
         }
         if (position.coords.longitude< -73.997051
           && position.coords.longitude> -73.995703
@@ -110,6 +126,7 @@
           && position.coords.latitude>40.730727){
             console.log("orange")
             document.body.style.backgroundColor ="orange"
+            document.getElementById("orange").style.visibility="visible"
         }
         if (position.coords.longitude< -73.996138
           && position.coords.longitude> -73.995703
@@ -117,6 +134,7 @@
           && position.coords.latitude<40.730727){
             console.log("yellow")
             document.body.style.backgroundColor ="yellow"
+            document.getElementById("yellow").style.visibility="visible"
         }
             if (position.coords.longitude> -73.996138
               && position.coords.longitude< -73.996636
@@ -124,6 +142,7 @@
               && position.coords.latitude>40.729639){
                 console.log("green")
                 document.body.style.backgroundColor ="green"
+                document.getElementById("green").style.visibility="visible"
         }
         if (position.coords.longitude< -73.998073
           && position.coords.longitude> -73.996636
@@ -131,6 +150,7 @@
           && position.coords.latitude>40.729639){
             console.log("blue")
             document.body.style.backgroundColor ="blue"
+            document.getElementById("blue").style.visibility="visible"
     }
     if (position.coords.longitude> -73.998073
       && position.coords.longitude< -73.999558
@@ -138,6 +158,7 @@
       && position.coords.latitude<40.731079){
         console.log("purple")
         document.body.style.backgroundColor ="purple"
+        document.getElementById("purple").style.visibility="visible"
 }
 
 if (position.coords.longitude> -73.998611
@@ -146,11 +167,13 @@ if (position.coords.longitude> -73.998611
   && position.coords.latitude>40.731079){
     console.log("brown")
     document.body.style.backgroundColor ="brown"
+    document.getElementById("brown").style.visibility="visible"
 }
 
         else {
           console.log("blue")
             document.body.style.backgroundColor ="pink"
+            document.getElementById("pink").style.visibility="visible"
         }
       }
 
@@ -159,6 +182,45 @@ if (position.coords.longitude> -73.998611
         handleLocationError(true, infoWindow, map.getCenter());
         document.body.style.backgroundColor ="black";
       }
+
+      var audio;
+      var playlist;
+      var tracks;
+      var current;
+
+      init();
+      function init(){
+          current = 0;
+          audio = $('audio');
+          playlist = $('#playlist');
+          tracks = playlist.find('li a');
+          len = tracks.length - 1;
+          audio[0].volume = .10;
+          playlist.find('a').click(function(e){
+              e.preventDefault();
+              link = $(this);
+              current = link.parent().index();
+              run(link, audio[0]);
+          });
+          audio[0].addEventListener('ended',function(e){
+              current++;
+              if(current == len){
+                  current = 0;
+                  link = playlist.find('a')[0];
+              }else{
+                  link = playlist.find('a')[current];
+              }
+              run($(link),audio[0]);
+          });
+      }
+      function run(link, player){
+              player.src = link.attr('href');
+              par = link.parent();
+              par.addClass('active').siblings().removeClass('active');
+              audio[0].load();
+              audio[0].play();
+      }
+
 
     </script>
     <script async defer

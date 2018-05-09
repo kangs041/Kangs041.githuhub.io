@@ -4,29 +4,22 @@
     <title>Sound track</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-
-    <div id="content">
-  <input type="file" id="thefile" accept="audio/x-pn/realaudio"
-   />
-  <canvas id="canvas"></canvas>
-  <audio id="audio" controls></audio>
-</div>
+    <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+        <source type="audio/mp3" src="http://www.archive.org/download/bolero_69/Bolero.mp3">
+        Sorry, your browser does not support HTML5 audio.
+    </audio>
+    <ul id="playlist">
+        <li class="active"><a href="http://www.archive.org/download/bolero_69/Bolero.mp3">Red</a></li>
+        <li><a href="http://www.archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3">Orange</a></li>
+        <li><a href="http://www.archive.org/download/CanonInD_261/CanoninD.mp3">Yellow</a></li>
+        <li><a href="http://www.archive.org/download/PatrikbkarlChamberSymph/PatrikbkarlChamberSymph_vbr_mp3.zip">Green</a></li>
+        <li><a href="http://www.archive.org/download/PatrikbkarlChamberSymph/PatrikbkarlChamberSymph_vbr_mp3.zip">Blue</a></li>
+        <li><a href="http://www.archive.org/download/PatrikbkarlChamberSymph/PatrikbkarlChamberSymph_vbr_mp3.zip">Purple</a></li>
+        <li><a href="http://www.archive.org/download/PatrikbkarlChamberSymph/PatrikbkarlChamberSymph_vbr_mp3.zip">Brown</a></li>
+        <li><a href="http://www.archive.org/download/PatrikbkarlChamberSymph/PatrikbkarlChamberSymph_vbr_mp3.zip">Pink</a></li>
+    </ul>
 
 <style>
-#canvas {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 50%;
-  opacity: .5;
-}
-#thefile {
-position: fixed;
-top: 50%;
-left: 10px;
-z-index: 100;
-}
 
 </style>
   <script language="javascript" type="text/javascript" src="music.js"></script>
