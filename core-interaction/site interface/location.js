@@ -10,7 +10,6 @@ var setup = function() {
     document.body.style.backgroundImage = "map.jpg";
 		document.body.style.backgroundSize = "1000px 2000px";
 };
-
 var draw = function() {
   // keeps program looping even though it is empty
 };
