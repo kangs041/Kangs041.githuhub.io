@@ -56,4 +56,4 @@ var mouseDragged = function() {
 
 var mouseReleased = function() {
   drawRed(mouseX, mouseY);
-}
+}};
