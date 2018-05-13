@@ -4,9 +4,14 @@
     <title>My website</title>
     <link rel="stylesheet"
           href="style.css"/>
+          <video autoplay muted id="myVideo">
+  <source src="logo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
   </head>
 
   <body>
+    <div class="content">
     <ul><p>Studio</p>
       <li><a href="attention1/attention1.html">deep attention</a></li>
       <li><a href="attention2/enter.html">hyper attention</a></li>
@@ -19,5 +24,21 @@
       <li><a href="poster/poster.html">poster</a></li>
       <li><a href="inputoutput/inputoutput.html">input and output</a></li>
       <li><a href="April17/April17.html">three viewport layout</a></li>
+    </ul>
+  </div>
   </body>
+  <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 </html>
